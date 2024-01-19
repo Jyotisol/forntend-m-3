@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+     padding:0px;
+    margin:0px; 
+}
+body{
+   width: 100;
+   height: 100vh;
+    font-family: 'Figtree', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{ 
+      max-width: 540px; 
+    /* width: 100%;  */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.img{
+
+}
+.container-info{
+    font-family: 'Figtree', sans-serif;
+     display: flex;
+     flex-direction: column;
+     width: 260px; 
+     height: 390px;
+     margin-bottom: 5px;
+     background-color: hsl(0, 0%, 100%);
+}
+.perfume{
+    font-size: 14px;
+    font-weight: 500;  
+    color:hsl(228, 12%, 48%);
+    margin-left: 20px; 
+    margin-top: 25px;
+    letter-spacing: 9px;
+}
+.container-info > h1{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    width: 180px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.0;
+    font-family: 'Fraunces', serif; 
+    font-family: 'Montserrat', sans-serif;  
+}
+.paragraph{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    width:220px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.rup{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.rup > span{
+    font-family: 'Fraunces', serif; 
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: bold;
+}
+.rup > del{
+    margin-left: 20px;
+    color:  hsl(228, 12%, 48%);
+    font-size: 15px;
+}
+.btn{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.btn > p{
+    font-size: 14px;
+    margin-inline: 19px;
+}
+.btn:hover{
+    background-color: hsl(155, 40%, 25%);
+    cursor: pointer;
+}
+.attribution{
+    padding: 20px;
+    
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px; /* Adjust padding as needed for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding-left: 5%; /* Adjust padding as needed */
+    }
+
+    .container-info {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    .paragraph {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    .img img {
+        max-width: 100%; /* Make the image responsive */
+        height: 300px;
+       
+    }
+
+    .attribution {
+        padding-right: 20px; /* Adjust padding as needed for smaller screens */
+    }
+}
